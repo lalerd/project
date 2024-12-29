@@ -1,0 +1,40 @@
+/* Sayfa genelindeki renk ve görünüm */
+.dashboard-container {
+    background-color: #f8f9fa; /* Arka plan rengi açık gri */
+    padding: 20px;
+    min-height: 100vh; /* Sayfanın tamamını kapsaması */
+  }
+  
+  /* Log Out butonunun sağ üst köşede yer alması */
+  .logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+  /* Tablo responsive olacak şekilde */
+  .table-responsive {
+    margin-top: 20px;
+  }
+  
+  /* Bootstrap tablo stilini kullanıyoruz */
+  .table th, .table td {
+    text-align: center;
+    padding: 12px;
+  }
+  
+  .table th {
+    background-color: #007bff; /* Tablo başlıkları mavi */
+    color: white;
+  }
+  
+  .table td {
+    background-color: #ffffff;
+  }
+  
+  .table-bordered th, .table-bordered td {
+    border: 1px solid #dee2e6;
+  }
+  

@@ -1,0 +1,128 @@
+/* Genel sayfa stili */
+body {
+    background-color: #e3f2fd; /* Açık mavi arka plan */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Login Sayfasının Konteyneri */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tam ekran yüksekliği */
+    background-color: #e3f2fd; /* Açık mavi arka plan */
+  }
+  
+  /* Login Formu */
+  .login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Maksimum genişlik */
+    text-align: center;
+  }
+  
+  /* Başlık */
+  h2 {
+    color: #1e88e5; /* Başlık için mavi renk */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Form etiketleri */
+  .form-label {
+    color: #757575; /* Daha yumuşak gri renk */
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Input alanları */
+  .form-control {
+    margin-bottom: 15px; /* Giriş kutuları arasındaki boşluk */
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Gri kenarlık */
+    width: 100%; /* Tam genişlik */
+    box-sizing: border-box;
+  }
+  
+  /* Inputlar odaklandığında */
+  .form-control:focus {
+    border-color: #1e88e5; /* Fokus durumunda mavi kenarlık */
+    box-shadow: 0 0 5px rgba(30, 136, 229, 0.5); /* Hafif mavi gölge */
+  }
+  
+  /* Login Butonu */
+  .btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e88e5;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1565c0; /* Hover durumunda daha koyu mavi */
+  }
+  
+  /* Giriş yapmadıysanız yeni bir hesap oluşturma kısmı */
+  .login-footer {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .login-footer a {
+    color: #1e88e5;
+    text-decoration: none;
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Query: Tablet ve daha büyük cihazlar için */
+  @media (max-width: 768px) {
+    .login-box {
+      padding: 30px;
+      max-width: 90%; /* Form genişliği küçük ekranlarda %90 */
+    }
+  
+    h2 {
+      font-size: 20px; /* Başlık boyutu küçük ekranlar için azaltıldı */
+    }
+  }
+  
+  /* Media Query: Mobil cihazlar için */
+  @media (max-width: 480px) {
+    .login-box {
+      padding: 20px;
+      max-width: 90%; /* Form genişliği mobil cihazlarda %90 */
+    }
+  
+    h2 {
+      font-size: 18px; /* Başlık boyutu mobil cihazlar için azaltıldı */
+    }
+  
+    .form-control {
+      padding: 10px; /* Inputların daha rahat görünmesi için padding azaltıldı */
+    }
+  
+    .btn-primary {
+      padding: 10px; /* Buton paddingi mobil cihazlarda azaltıldı */
+      font-size: 14px; /* Buton metin boyutu küçük ekranlar için azaltıldı */
+    }
+  }
+  
